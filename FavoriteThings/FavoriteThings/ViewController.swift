@@ -15,6 +15,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let favoriteThings = [
         //TODO: Fill this array with your favorite things. Then use this collection to populate your table.
+        "firefox",
+        "beatles"
+        
     ]
 
     // Mark: Table View Data Source Methods
@@ -27,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         // TODO: Implement this method to get the correct row count
-        let placeholderCount = 2
+        let placeholderCount = self.favoriteThings.count
         return placeholderCount
     }
 
